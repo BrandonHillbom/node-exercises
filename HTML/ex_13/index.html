@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create User</title>
+</head>
+
+<body>
+    <h1>Create User</h1>
+    <form>
+        <label for="nameid">Please enter your name:</label>
+        <input type="text" name="name" placeholder="name" id="nameid">
+        <br>
+        
+        <select name="movies" multiple="multiple" size="6">
+            <option value=""><strong>Please select a movie</strong></option>
+            <option value="batman_vs_superman">Batman vs Superman</option>
+            <option value="deadpool">Deadpool</option>
+            <option value="civil_war">Captain American Civil War</option>
+            <option value="doctor_strange">Doctor Strange</option>
+            <option value="gotg_vol2">Guardian of the Galaxy Vol 2</option>
+            <option value="Homecoming">Spider-Man Homecoming</option>
+            <option value="thor_ragnarok">Thor Ragnarok</option>
+            <option value="wonder_woman" selected>Wonder Woman</option>
+            <option value="black_panther">Black Panther</option>
+            <option value="logan">Logan</option>
+            <option value="aquaman">Aquaman</option>
+            <option value="infinity_war">Avengers Infinity War</option>
+            <option value="Endgame">Avengers Endgame</option>
+            <br>
+          </select>
+          <br>
+          <label for="BIOid" cols="25" rows="5">Biography: </label>
+          <textarea name="Bio" placeholder="Please let us know about yourself" id="BIOid"></textarea>
+          <br>
+          <br>
+
+      </form>
+      <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="avatarid">Upload your avatar:</label>
+        <input type="file" name="Avatar" id="avatarid"/>
+      </form>
+      <form>
+          <br>
+        <button value="clear" name="Clear-form">Clear Form</button>
+        <button value="create" name="create-user">Add New User</button>
+      </form>
+</body>
+
+</html>
