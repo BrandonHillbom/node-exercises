@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create User</title>
+</head>
+
+<body>
+    <h1>Create User</h1>
+    <fieldset>
+        <legend>User Form</legend>
+        <br>
+        <form action="create_user.html" method="get" enctype="application/x-www-form-urlencoded">
+            <label>Username:</label>
+            <input type="text" name="username" placeholder="username" size="30" maxlength="12">
+
+            <label>Password:</label>
+            <input type="password" name="password" size="30" maxlength="8" placeholder="password">
+
+            <br>
+            <br>
+            <label for="birthday">Please enter your birthday:</label>
+            <input id="date" type="date" value="2000-04-02">
+            <br>
+
+            <label for="email">Please enter your email:</label>
+            <input type="email" name="email" />
+            <br>
+
+            <label for="personalsite">Please enter your personal site:</label>
+            <input type="url" name="personalsite" />
+            <br>
+
+
+
+            <label>Select your favourite superhero:</label>
+            <input type="radio" name="Superhero" value="Iron Man" checked> Iron Man
+            <input type="radio" name="Superhero" value="Spiderman"> Spiderman
+            <input type="radio" name="Superhero" value="Thor"> Thor
+            <input type="radio" name="Superhero" value="Captain America"> Captain America
+            <input type="radio" name="Superhero" value="Black Panther"> Black Panther
+            <input type="radio" name="Superhero" value="Hulk"> Hulk
+
+            <br>
+            <br>
+
+            <label>Select your favourite video game:</label>
+            <input type="checkbox" name="videogames" value="Fifa" checked="checked"> Fifa
+            <input type="checkbox" name="videogames" value="NHL"> NHL
+            <input type="checkbox" name="videogames" value="GTA"> GTA
+            <input type="checkbox" name="videogames" value="Uncharted" checked> Uncharted
+            <br>
+        </form>
+        <form action="https://www.google.ca/search" method="get" enctype="application/x-www-form-urlencoded">
+            <label for="q">Search: </label>
+            <input type="search" name="q" id="q"/>
+        </form>
+        <form>
+            <input type="submit" value="Submit this form">
+
+            <input type="hidden" name="userid" value="2300">
+
+            <input type="image" src="img/register-button.png" width="400" height="400">
+        </form>
+    </fieldset>
+</body>
+
+</html>
