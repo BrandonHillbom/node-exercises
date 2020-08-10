@@ -1,7 +1,7 @@
 const femaleStudents = ['mack', 'morgan', 'carolyn', 'elaine', 'marlene']
 const maleStudents = ['tom', 'jerry', 'johnny', 'wyatt', 'bob']
 let students = femaleStudents.concat(maleStudents)
-
+students = students.sort()
 
 console.log(femaleStudents[0])
 console.log(femaleStudents[1])
