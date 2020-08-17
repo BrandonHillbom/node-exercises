@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.alert(`This program adds all the numbers you input`)
+        let sum = 0
+        let count = 0
+        while (window.confirm('Do you want to input another number?')) {
+            let number = window.prompt('Please input a number to be added')
+            let int = parseInt(number)
+            sum += int
+            count++
+            console.log(`The result so far is ${sum}`)
+        }
+        console.log(`The final result is ${sum}`)
+        console.log(`The user input ${count} numbers`)
+        let average = sum / count
+        console.log(`The average is: ${average}`)
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+
+</body>
+</html>
