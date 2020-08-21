@@ -1,7 +1,7 @@
 function add() {
     let count = 0
     let result = 0
-    while (count < add.length) {
+    while (count < arguments.length) {
         result += arguments[count]
         count++
     }
