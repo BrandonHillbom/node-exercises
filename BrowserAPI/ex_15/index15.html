@@ -4,14 +4,16 @@
 <head>
     <title>Selectors</title>
     <script>
-        const mainElement = document.getElementById('p.important');
-        const list = document.querySelectorAll('div.li');
-        const unordered = document.querySelector('div.ul');
-        const blueClass = document.getElementById('p.blue');
+        window.onload = function() {
+        const mainElement = document.getElementById('important');
+        const list = document.querySelectorAll('li');
+        const unordered = document.querySelector('ul');
+        const blueClass = document.querySelector('p.blue');
         console.log(mainElement)
         console.log(list)
         console.log(unordered)
         console.log(blueClass)
+        }
     </script>
 </head>
 

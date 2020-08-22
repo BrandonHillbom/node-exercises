@@ -35,13 +35,15 @@
     }
   </style>
   <script>
+      window.onload = function() {
       const element = document.querySelector('a')
       if (element.hasAttribute('class') == true) {
         element.classList.add('blue');
       }
       else {
-        element.classList.add('blue');
+        element.classList.add('red');
       }
+    }
   </script>
 </head>
 <body>

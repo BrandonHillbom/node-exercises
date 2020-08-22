@@ -35,6 +35,7 @@
     }
   </style>
   <script>
+    window.onload = function() {
       let colour = window.prompt(`Please choose & input one of the following colors: green, blue or red`)
       const element = document.querySelector('a')
       if (colour == 'green') {
@@ -52,7 +53,7 @@
       else {
           console.log('invalid colour')
       }
-
+    }
   </script>
 </head>
 <body>
