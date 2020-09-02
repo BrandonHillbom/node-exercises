@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Products</title>
+    <script>
+        window.onload = function() {
+            const unordered = document.querySelector('ul')
+            const firstList = unordered.children.item(0)
+            const secondList = unordered.children.item(1)
+            const thirdList = unordered.children.item(2)
+            const fourthList = unordered.children.item(3)
+            const fifthList = unordered.children.item(4)
+            const sixthList = unordered.children.item(5)
+            const seventhList = unordered.children.item(6)
+
+            unordered.removeChild(firstList)
+            unordered.removeChild(secondList)
+            unordered.removeChild(thirdList)
+            unordered.removeChild(fourthList)
+            unordered.removeChild(fifthList)
+            unordered.removeChild(sixthList)
+            unordered.removeChild(seventhList)
+        }
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li>Bannana</li>
+      <li>Apple</li>
+      <li>Peach</li>
+      <li>Eggs</li>
+      <li>Tomatto</li>
+      <li>Lettuce</li>
+      <li>Milk</li>
+    </ul>
+  </body>
+</html>

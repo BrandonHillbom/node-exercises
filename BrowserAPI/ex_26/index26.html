@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>It's all JavaScript Baby!!</title>
+    <script>
+        window.onload = function() {
+        const body = document.querySelector('body')
+        const names = ['Bob', 'Tom', 'Joe', 'Sam', 'Rod', 'Sal', 'John', 'Tim', 'Jim', 'Pam']
+        const unordered = document.createElement('ul')
+
+        names.forEach(function(name) {
+        const list = document.createElement('li')
+        list.innerText = name
+        unordered.appendChild(list)
+})
+        document.body.appendChild(unordered)
+        }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

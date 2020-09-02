@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>It's all JavaScript Baby!!</title>
+    <script>
+        window.onload = function () {
+            const body = document.querySelector('body')
+            const numbers = []
+            const unordered = document.createElement('ul')
+
+            for (let count = 0; count < 100; count++) {
+                let value = count + 1
+                numbers[count] = (value)
+            }
+
+            numbers.forEach(function(number) {
+                const listed = document.createElement('li')
+                listed.innerText = `Item ${numbers[number]} as li element`
+                if (numbers[number] % 2 === 0) {
+                    listed.style.color = '#ddd'
+                }
+                else {
+                    listed.style.color = '#eee'
+                }
+                unordered.appendChild(listed)
+            })
+            body.appendChild(unordered)
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

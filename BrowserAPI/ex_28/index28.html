@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>It's all JavaScript Baby!!</title>
+    <script>
+        window.onload = function () {
+            const nameArray = []
+            const body = document.querySelector('body')
+            const unordered = document.createElement('ul')
+            let count = 0
+
+            while (window.confirm('Do you want to input another name?')) {
+                let names = window.prompt('Please input another name')
+                nameArray[count] = names
+                count++
+            }
+            nameArray.forEach(function (name) {
+                const listed = document.createElement('li')
+                listed.innerText = name
+                if (nameArray.length % 2 == 0) {
+                    listed.style.color = '#ddd'
+                }
+                else {
+                    listed.style.color = '#eee'
+                }
+                unordered.appendChild(listed)
+            })
+            body.appendChild(unordered)
+
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
