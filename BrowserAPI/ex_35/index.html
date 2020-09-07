@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+    <script>
+        window.onload = function () {
+            const firstButton = document.getElementById('firstButton')
+            const secondButton = document.getElementById('secondButton')
+            const link = document.querySelector('a')
+
+            function greeting() {
+                window.alert('Greetings!')
+            }
+
+            const secondClickHandler = function() {
+            firstButton.removeEventListener('click', greeting)
+            }
+
+            link.addEventListener('click', function(event) {
+                event.preventDefault()
+                window.alert("This link doesn't send us to a different page as we're preventing the default behaviour")
+
+            })
+
+            firstButton.addEventListener('click', greeting)
+            secondButton.onclick = secondClickHandler
+        }
+    </script>
+  </head>
+  <body>
+    <button id="firstButton">Click Me!!</button>
+    <button id="secondButton">Remove event listener</button>
+    <a href="https://google.com">Link with JavaScript handler</a>
+  </body>
+</html>
